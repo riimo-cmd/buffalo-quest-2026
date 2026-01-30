@@ -5,8 +5,8 @@ let main = document.getElementById("main");
 let squareHTML = ``;
 
 //making the squares. I could only do one loop but the nesting makes the css easier
-for (let i = 1; i <= (20); i++){
-    for (let j = 1; j <= 21; j++){
+for (let i = 1; i <= (30); i++){
+    for (let j = 1; j <= 31; j++){
         squareHTML += `
             <div id="square-${i}" class="square col-${j%2}"></div>
         `;
