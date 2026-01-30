@@ -51,8 +51,29 @@ main.addEventListener("click", () => {
 } </style>`
     
 
-    main.insertAdjacentHTML("beforeend", newStyle);
-    
+main.insertAdjacentHTML("beforeend", newStyle);
+buffaloPng();
+
 });
 
+//
+let buffaloChance = 1;
+let buffaloNumber;
+
+//function that 
+function buffaloPng(){
+    buffaloNumber = Math.floor(Math.random() * 2);
+    if (buffaloChance = buffaloNumber){
+        main.insertAdjacentHTML("beforeend", `
+            
+            <style>
+            .col-0{
+            background-color: black;
+            background-image: url('https://em-content.zobj.net/source/twitter/322/bison_1f9ac.png');
+            background-size: cover;
+            }
+            
+            </style>`);
+    }
+}
 
