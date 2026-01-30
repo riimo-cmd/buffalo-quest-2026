@@ -63,8 +63,8 @@ let buffaloNumber;
 //function that 
 function buffaloPng(){
     buffaloNumber = Math.floor(Math.random() * 100);
-    if (buffaloChance = buffaloNumber){
-        console.log(buffaloNumber);
+    console.log(buffaloNumber);
+    if (buffaloChance == buffaloNumber){
         main.insertAdjacentHTML("beforeend", `
             
             <style>
