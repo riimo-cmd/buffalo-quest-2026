@@ -58,11 +58,12 @@ buffaloPng();
 
 //
 let buffaloChance = 1;
+let buffaloBackground = 2;
 let buffaloNumber;
 
-//function that 
+//function for the buffalo easter eggs
 function buffaloPng(){
-    buffaloNumber = Math.floor(Math.random() * 100);
+    buffaloNumber = Math.floor(Math.random() * 200);
     console.log(buffaloNumber);
     if (buffaloChance == buffaloNumber){
         main.insertAdjacentHTML("beforeend", `
@@ -76,5 +77,34 @@ function buffaloPng(){
             
             </style>`);
     }
+    else if (buffaloBackground == buffaloNumber){
+        main.insertAdjacentHTML("beforeend", `
+            
+            <style>
+            body{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/640px-American_bison_k5680-1.jpg');
+            }
+
+            .col-0{
+            background-color: #00000000;
+            }
+
+            .square{
+    background: #00000000;
 }
+
+.col-0{
+    background: #00000000>;
+}
+
+
+.square:nth-child(2n){
+    background: #00000000;
+}
+            
+            
+            </style>`);
+    }
+}
+
 
